@@ -40,8 +40,8 @@ export default () => {
   );
 
   return (
-    <Navbar className="px-4 py-2 lg:px-8 lg:py-4" shadow={false}>
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className="px-4 py-2 bg-transparent lg:px-8 lg:py-4" shadow={false} blurred={false} fullWidth>
+      <div className="container mx-auto flex items-center justify-between">
         {/* TODO: Replace with SVG logo */}
         <div className="flex flex-col cursor-pointer">
           <Typography className="block mx-auto font-medium">

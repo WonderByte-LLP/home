@@ -7,7 +7,6 @@ const NavButton = ({ children, ...props }) => {
     <Typography
       as="li"
       variant="small"
-      color="blue-gray"
       className="flex items-center gap-x-2 p-1 font-medium font-monospace uppercase tracking-wider mx-auto underline-offset-4 hover:underline"
       {...props}
     >
