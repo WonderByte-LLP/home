@@ -1,22 +1,33 @@
-"use client";
+'use client';
 
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@material-tailwind/react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const inter = Inter({ subsets: ["latin"] });
+import { ThemeProvider } from '@material-tailwind/react';
 
-// export const metadata = {
-//   title: "WonderByte",
-//   description: "WonderByte Software",
-// };
+import { Inter } from 'next/font/google';
 
-export default function RootLayout({ children }) {
+import './globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
+
+function RootLayout({ children }) {
   return (
     <ThemeProvider>
-      <html lang="en">
+      <html lang='en'>
         <body className={inter.className}>{children}</body>
       </html>
     </ThemeProvider>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
+};
+
+RootLayout.defaultProps = {
+  children: undefined,
+};
+
+export default RootLayout;
+
