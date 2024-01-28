@@ -1,5 +1,5 @@
-"use client";
+'use client';
 
-import Home from './home.js';
+import Home from './App';
 
 export default Home;
