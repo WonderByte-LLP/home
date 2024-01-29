@@ -72,7 +72,7 @@ function FeatureForm() {
             </div>
             <button
               type="submit"
-              className={`bg-white text-black p-2 rounded-md w-40 mx-auto ${submitting ? "bg-slate-400 cursor-progress" : ""}`}
+              className={`text-black p-2 rounded-md w-40 mx-auto ${submitting ? "bg-slate-400 cursor-progress" : "bg-white"}`}
               disabled={submitting}
             >
               Submit
