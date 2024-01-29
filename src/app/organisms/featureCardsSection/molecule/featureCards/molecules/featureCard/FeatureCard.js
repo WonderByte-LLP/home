@@ -1,13 +1,18 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { Typography } from "@material-tailwind/react";
 
-function FeatureCard(props) {
+function FeatureCard(
+  props = {
+    children: undefined,
+    imageClassName: undefined,
+    imageSource: undefined,
+    title: undefined,
+  }
+) {
   const { imageSource, title, imageClassName, children } = props;
   return (
-    <div
-      className="flex flex-col shadow-md rounded-lg bg-slate-50 overflow-hidden h-full lg:flex-row"
-    >
+    <div className="flex flex-col shadow-md rounded-lg bg-slate-50 overflow-hidden h-full lg:flex-row">
       <div className="lg:basis-2/5 shrink-0">
         <div className="flex justify-center items-center h-full">
           <img src={imageSource} className={imageClassName} alt=""></img>
@@ -26,17 +31,10 @@ function FeatureCard(props) {
 }
 
 FeatureCard.propTypes = {
- children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
- imageClassName: PropTypes.string,
- imageSource: PropTypes.string,
- title: PropTypes.string,
-};
-
-FeatureCard.defaultProps = {
-  children: undefined,
-  imageClassName: undefined,
-  imageSource: undefined,
-  title: undefined,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
+  imageClassName: PropTypes.string,
+  imageSource: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default FeatureCard;

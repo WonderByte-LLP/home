@@ -4,6 +4,7 @@ import { Typography } from '@material-tailwind/react';
 // Components
 import FeatureCardsSection from './organisms/featureCardsSection';
 import AppSkeleton from './organisms/appSkeleton';
+import ContactFormSection from './organisms/featureContactForm';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       {/* Offerings */}
       <FeatureCardsSection />
       {/* Quote Form */}
+      <ContactFormSection />
       {/* Footer/About */}
     </>
   );
