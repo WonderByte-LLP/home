@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import PropTypes from 'prop-types';
 import FormContext from "../context/FormContext";
 

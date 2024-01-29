@@ -31,10 +31,10 @@ function FeatureCard(
 }
 
 FeatureCard.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]).isRequired,
   imageClassName: PropTypes.string,
-  imageSource: PropTypes.string,
-  title: PropTypes.string,
+  imageSource: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default FeatureCard;

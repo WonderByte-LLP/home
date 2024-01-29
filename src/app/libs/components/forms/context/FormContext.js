@@ -1,4 +1,3 @@
-import { EMPTY_OBJECT } from "app/constants/app.general";
 import { createContext } from "react";
 
 const FormContext = createContext({

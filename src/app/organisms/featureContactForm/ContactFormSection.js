@@ -9,7 +9,7 @@ function ContactFormSection() {
         Get In Touch
       </Typography>
       <Typography variant="paragraph" className="text-center">
-        Let's get in touch! Let us know your requirements and get a free quote!
+        Let&apos;s get in touch! Let us know your requirements and get a free quote!
       </Typography>
       <FeatureForm />
     </div>

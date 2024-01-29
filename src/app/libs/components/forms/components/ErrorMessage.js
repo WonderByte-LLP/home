@@ -1,8 +1,7 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import FormContext from "../context/FormContext";
 import { Typography } from "@material-tailwind/react";
+import FormContext from "../context/FormContext";
 
 function ErrorMessage({ name }) {
   const { errors } = useContext(FormContext);
@@ -12,7 +11,7 @@ function ErrorMessage({ name }) {
 }
 
 ErrorMessage.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 
 export default ErrorMessage;
